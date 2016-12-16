@@ -1,7 +1,7 @@
 {
-  "name": "circularunisinos",
+  "name": "br.com.unisinos.circular",
   "version": "1.1.1",
-  "description": "CircularUnisinos: An Ionic project",
+  "description": "Aplicativo para olhar os horários do circular da Unisinos",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^2.0.4",

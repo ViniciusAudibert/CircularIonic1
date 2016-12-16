@@ -1,6 +1,6 @@
 {
   "name": "CircularUnisinos",
-  "app_id": "",
+  "app_id": "circular.unisinos",
   "gulpStartupTasks": [
     "sass",
     "watch"
