@@ -17,14 +17,15 @@
   function getCircularInfoByHour(size, weekend, timeChoosen) {
     var circularHorarios = getCircularInfo();
 
-    if (weekend === 1) {
+    if (weekend === '1') {
       delete circularHorarios.Sábado;
-    } else if (weekend === 2) {
+    } else if (weekend === '2') {
       delete circularHorarios['Segunda a Sexta'];
     }
-    for (var key in circularHorarios) {
-      for (var shift in circularHorarios[key]) {
-        var hours = circularHorarios[key];
+
+    for (var dayWeek in circularHorarios) {
+      for (var shift in circularHorarios[dayWeek]) {
+        var hours = circularHorarios[dayWeek];
 
         if (timeChoosen) {
           var index = getApproachTimeIndex(hours[shift], timeChoosen);

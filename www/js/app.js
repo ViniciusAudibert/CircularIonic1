@@ -13,8 +13,11 @@ angular.module('starter', ['ionic'])
 })
 
 .controller('IndexCtrl', function($scope) {
+
   $scope.find = function (time, chosenWeek) {
     $scope.circular = getCircularInfoByHour(2, chosenWeek, time);
   };
   $scope.find();
+  
+  $scope.chosenWeek = 0;
 });

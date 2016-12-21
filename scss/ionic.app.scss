@@ -51,27 +51,34 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   text-align: center;
 }
 
-#circularWeek {
-  margin-bottom: 45px;
+#circular-week {
+  margin-bottom: 25px;
 }
 
 .dropdown-selected {
-   background: url("http://i62.tinypic.com/15xvbd5.png") no-repeat 96% 0;
-   height: 29px;
-   overflow: hidden;
-   width: 240px;
-   background-color: $calm;
-   -webkit-border-radius: 5px;
-   -moz-border-radius: 5px;
-   border-radius: 5px;
+  height: 29px;
+  overflow: hidden;
+  width: 95%;
+  margin: 15px auto 0;
+  background-color: $calm;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 
 .dropdown-selected select {
-   background: rgba(0, 0, 0, 0.3);
-   color: #ffffff;
-   border: none;
-   font-size: 14px;
-   height: 29px;
-   padding: 5px;
-   width: 268px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  border: none;
+  font-size: 14px;
+  height: 29px;
+  padding: 5px;
+  width: 100%;
+}
+
+.button-transparent {
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
 }
