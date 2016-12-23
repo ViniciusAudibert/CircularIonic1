@@ -19,16 +19,16 @@
       <h1>Circular</h1>
     </ion-header-bar>
     <ion-content>
-      <form class="bar bar-header item-input-inset" ng-submit="find(time,chosenWeek)">
+      <form class="form-top item-input-inset" ng-submit="find(time,chosenWeek)">
         <button class="button-transparent"><i class="icon ion-ios-search placeholder-icon"></i></button>
-        <input type="text" placeholder="Digite o horário da preferência" ng-model="time">
+        <input id="search-by-hour" type="text" placeholder="Digite o horário da preferência" ng-model="time">
       </form>
       <div id="circular-week">
         <div class="dropdown-selected">
           <select ng-change="find(time,chosenWeek)" ng-model="chosenWeek">
-            <option  ng-value="0" selected>Todos os dias</option>
-            <option ng-value="1">Segunda a Sexta</option>
-            <option ng-value="2">Sábado</option>
+            <option value="0">Todos os dias</option>
+            <option value="1">Segunda a Sexta</option>
+            <option value="2">Sábado</option>
          </select>
         </div>
       </div>
@@ -54,4 +54,3 @@
 </body>
 
 </html>
-

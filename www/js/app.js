@@ -12,12 +12,13 @@ angular.module('starter', ['ionic'])
   });
 })
 
-.controller('IndexCtrl', function($scope) {
+.controller('IndexCtrl', function ($scope) {
 
   $scope.find = function (time, chosenWeek) {
+    document.getElementById("search-by-hour").blur();
     $scope.circular = getCircularInfoByHour(2, chosenWeek, time);
   };
   $scope.find();
-  
-  $scope.chosenWeek = 0;
+
+  $scope.chosenWeek = '0';
 });
