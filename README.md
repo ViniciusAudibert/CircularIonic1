@@ -1,1 +1,1 @@
-"This application was made with Ionic 2 and it was created to see the bus stop's times."
+"This application was developed with ionic 1 for the purpose of consulting the Unisinos circular time"
